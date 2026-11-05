@@ -1,0 +1,12 @@
+{
+  "name": "biblioteca",
+  "version": "1.0.0",
+  "description": "sistema de biblioteca",
+  "license": "ISC",
+  "author": "Isaias Castro",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
