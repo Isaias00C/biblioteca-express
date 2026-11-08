@@ -1,9 +1,9 @@
 import express from "express";
 import userRoutes from "./routes/user.js";
+import boookRoutes from "./routes/book.js";
 import "dotenv/config"
 
 const app = express();
-const port = process.env.PORT || 3000;
 
 app.get("/healthy", (req, res) => {
     res.send("Healthy");
@@ -11,9 +11,6 @@ app.get("/healthy", (req, res) => {
 
 app.use(express.json())
 app.use("/users", userRoutes);
-
-app.listen(port, () => {
-    console.log(`Example app listen port ${port}`);
-})
+app.use("/books", boookRoutes);
 
 export default app;
